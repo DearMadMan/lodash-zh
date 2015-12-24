@@ -1,5 +1,7 @@
 # lodash 中文文档
 
+在线预览: [http://lodash.qiuqudou.com](http://lodash.qiuqudou.com)
+
 本文档的生产依赖nodejs.
 
 ## 使用方法
