@@ -338,12 +338,12 @@
 ### <a id="_chunkarray-size1"></a>`_.chunk(array, [size=1])`
 <a href="#_chunkarray-size1">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.10.1/lodash.src.js#L4624 "View in source") [&#x24C9;][1] [&#x24C3;](https://www.npmjs.com/package/lodash.chunk "See the npm package")
 
-根据 `数值` 将集合进行块状分割并返回新的数组.
-如果 `集合` 不能均衡的进行分配, 最后不足的部分将放在最后的块中.
+创建一个新的数组，将原先数组中数据按照给定的大小进行分块，并返回之。
+如果 `原数组` 最后的一个数据块的大小小于指定大小，最后那个数据块将会被保留（请看下文的例子）
 
 #### 参数
-1. `array` *(Array)*: 需要进行分割的数组.
-2. `[size=1]` *(number)*: 每块需要需要分割的大小.
+1. `array` *(Array)*: 需要进行分割的数组
+2. `[size=1]` *(number)*: 每块需要需要分割的大小
 
 #### 返回值
 *(Array)*:  返回一个包含所有分割块的新的数组.
