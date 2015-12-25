@@ -388,14 +388,15 @@ _.compact([0, 1, false, 2, '', 3]);
 ### <a id="_differencearray-values"></a>`_.difference(array, [values])`
 <a href="#_differencearray-values">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.10.1/lodash.src.js#L4686 "View in source") [&#x24C9;][1] [&#x24C3;](https://www.npmjs.com/package/lodash.difference "See the npm package")
 
-创建一个差异 `数组` 不包含使用 [`SameValueZero`](http://ecma-international.org/ecma-262/6.0/#sec-samevaluezero) 方法所提供的数组.
+创建一个去重差异 `数组`, 该数组排除了所提供的其他数组的元素, 通过 [`SameValueZero`](http://ecma-international.org/ecma-262/6.0/#sec-samevaluezero) 方法比较。
+
 
 #### 参数
 1. `array` *(Array)*: 需要进行检查的数组.
 2. `[values]` *(...Array)*: 需要进行排除的数组.
 
 #### 返回值
-*(Array)*:  返回一个经筛选后的新数组.
+*(Array)*:  返回一个经排除后的新数组.
 
 #### 示例
 ```js
