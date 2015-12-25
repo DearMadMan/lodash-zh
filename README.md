@@ -8,15 +8,13 @@
 
 克隆本项目到本地存储.
 在终端命令切换到存储目录输入以下命令.
-	
+
 ```
 cd lodash-zh
 
-mkdir build
-
 npm install && npm run start
 
-// server listen on http://localhost:3000 
+// server listen on http://localhost:3000
 
 ```
 
