@@ -1,4 +1,4 @@
 build/*
 node_modules/
 *.log
-.DS_Stroe
+.DS_Store
