@@ -864,7 +864,7 @@ _.initial([1, 2, 3]);
 创建一个包含所有使用[`SameValueZero`](http://ecma-international.org/ecma-262/6.0/#sec-samevaluezero)进行等值比较所筛选后的唯一值数组.
 
 #### 参数
-1. `[arrays]` *(...Array)*: 带检察的数组队列. 
+1. `[arrays]` *(...Array)*: 待检查的数组队列.
 
 #### 返回值
 *(Array)*:  返回队列中所有数组共享元素的新数组.
