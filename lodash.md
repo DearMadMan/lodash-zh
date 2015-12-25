@@ -411,14 +411,14 @@ _.difference([1, 2, 3], [4, 2]);
 ### <a id="_droparray-n1"></a>`_.drop(array, [n=1])`
 <a href="#_droparray-n1">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.10.1/lodash.src.js#L4716 "View in source") [&#x24C9;][1] [&#x24C3;](https://www.npmjs.com/package/lodash.drop "See the npm package")
 
-根据提供的参数 `n` 从起始端对 `数组` 内元素进行丢弃操作.
+创建一个从起始端丢弃 `n` 个元素的数组切片
 
 #### 参数
 1. `array` *(Array)*: 需要进行处理的数组.
 2. `[n=1]` *(number)*: 需要丢弃的元素个数.
 
 #### 返回值
-*(Array)*:  返回丢弃操作后新的数组.
+*(Array)*:  返回丢弃操作后新的数组切片.
 
 #### 示例
 ```js
@@ -443,14 +443,14 @@ _.drop([1, 2, 3], 0);
 ### <a id="_droprightarray-n1"></a>`_.dropRight(array, [n=1])`
 <a href="#_droprightarray-n1">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.10.1/lodash.src.js#L4751 "View in source") [&#x24C9;][1] [&#x24C3;](https://www.npmjs.com/package/lodash.dropright "See the npm package")
 
-根据所提供的参数 `n` 对 `数组` 从尾端元素开始进行丢弃操作.
+创建一个从尾端丢弃 `n` 个元素的数组切片
 
 #### 参数
 1. `array` *(Array)*: 需要进行处理的数组.
 2. `[n=1]` *(number)*: 需要进行丢弃的元素个数.
 
 #### 返回值
-*(Array)*:  返回丢弃操作后新的数组.
+*(Array)*:  返回丢弃操作后新的数组切片.
 
 #### 示例
 ```js
@@ -475,7 +475,7 @@ _.dropRight([1, 2, 3], 0);
 ### <a id="_droprightwhilearray-predicate_identity-thisarg"></a>`_.dropRightWhile(array, [predicate=_.identity], [thisArg])`
 <a href="#_droprightwhilearray-predicate_identity-thisarg">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.10.1/lodash.src.js#L4812 "View in source") [&#x24C9;][1] [&#x24C3;](https://www.npmjs.com/package/lodash.droprightwhile "See the npm package")
 
-创建一个从尾端元素进行裁剪后的 `数组`. 数组中元素的丢弃操作直到 `断言(predicate)` 的结果为假值.
+创建一个从尾端元素进行丢弃操作后的 `数组` 切片. 数组中元素的丢弃操作直到 `断言(predicate)` 的结果为假值.
 断言限定 `thisArg` 并且调用的同时传递三个参数(value,index,array).
 <br>
 <br>
@@ -493,7 +493,7 @@ _.dropRight([1, 2, 3], 0);
 3. `[thisArg]` *(&#42;)*:  `this` 绑定 `predicate`.
 
 #### 返回值
-*(Array)*:  返回丢弃操作后的 `数组`.
+*(Array)*:  返回丢弃操作后的 `数组` 切片.
 
 #### 示例
 ```js
@@ -529,7 +529,7 @@ _.pluck(_.dropRightWhile(users, 'active'), 'user');
 ### <a id="_dropwhilearray-predicate_identity-thisarg"></a>`_.dropWhile(array, [predicate=_.identity], [thisArg])`
 <a href="#_dropwhilearray-predicate_identity-thisarg">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.10.1/lodash.src.js#L4867 "View in source") [&#x24C9;][1] [&#x24C3;](https://www.npmjs.com/package/lodash.dropwhile "See the npm package")
 
-创建一个从起始元素进行裁剪操作的 `数组` . 数组中元素的丢弃直到 `断言` 返回假值为止.
+创建一个从起始元素进行丢弃操作的 `数组` 切片. 数组中元素的丢弃直到 `断言` 返回假值为止.
 断言限定 `thisArg` 并且调用的同时传递三个参数(value,index,array).
 <br>
 <br>
@@ -547,7 +547,7 @@ _.pluck(_.dropRightWhile(users, 'active'), 'user');
 3. `[thisArg]` *(&#42;)*: `this` 绑定 `predicate`.
 
 #### 返回值
-*(Array)*:  返回丢弃操作后的数组.
+*(Array)*:  返回丢弃操作后的数组切片.
 
 #### 示例
 ```js
